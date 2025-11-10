@@ -1,3 +1,13 @@
+-- Ensure the ApartmentTracker database exists and use it
+IF DB_ID(N'ApartmentHub') IS NULL
+BEGIN
+    PRINT 'Creating database [ApartmentHub]...';
+    CREATE DATABASE [ApartmentHub];
+END
+GO
+
+USE [ApartmentHub];
+GO
 -- =====================================================
 -- APARTMENT MANAGEMENT DATABASE
 -- =====================================================

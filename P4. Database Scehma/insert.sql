@@ -1,3 +1,14 @@
+-- Require the DB to exist, then use it
+IF DB_ID(N'ApartmentHub') IS NULL
+BEGIN
+    RAISERROR('Database [ApartmentHub] not found. Run create.sql first.', 16, 1);
+    RETURN; -- or THROW 50000, '...', 1;
+END
+GO
+
+USE [ApartmentHub];
+GO
+
 -- =====================================================
 -- APARTMENT MANAGEMENT DATABASE
 -- =====================================================
