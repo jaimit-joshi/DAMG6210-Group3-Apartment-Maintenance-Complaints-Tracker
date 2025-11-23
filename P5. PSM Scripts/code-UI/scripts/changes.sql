@@ -1,1 +1,0 @@
-ALTER TABLE lease ALTER COLUMN payment_due_day DROP NOT NULL;
